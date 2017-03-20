@@ -5,6 +5,9 @@
 #              names that match the code of the toy.
 #              Some EXIF metadata is also added
 #              e.g. ie03sUBEApqr.jpg --> 816.jpg
+# Dependencies: You will need the xmllint and exiftool programs installed.
+#               xmllint can be found in the libxml2-utils package in Ubuntu
+#               exiftool can be found in the libimage-exiftool-perl package in Ubuntu
 # Written by: Christopher McAvaney - christopher.mcavaney@gmail.com
 # 
 
