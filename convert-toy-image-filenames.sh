@@ -28,9 +28,9 @@ for ((cnt = 1; cnt <= NUM_TOYS; cnt++)) ; do
 
 	# check for an image file
 	IMAGE_FILE=$(xmllint --xpath "string(/libratu/data/toys/toy[$cnt]/image-filename)" ${BACKUP_XML_FILE})
-	if [ -n "${IMAGE_FILE}" ] ; then
+	if [[ -n "${IMAGE_FILE}" ]] ; then
 		echo "backup image file == ${IMAGE_FILE}"
-		if [ -a ${BACKUP_FOLDER}/${IMAGE_FILE} ] ; then
+		if [[ -a ${BACKUP_FOLDER}/${IMAGE_FILE} ]] ; then
 			echo "creating copy"
 			cp -av ${BACKUP_FOLDER}/${IMAGE_FILE} ${NEW_IMAGE_FOLDER}/${TOY_CODE}.jpg
 			# Add the EXIF metadata to the new image
